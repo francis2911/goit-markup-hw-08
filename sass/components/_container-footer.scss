@@ -1,0 +1,129 @@
+.page-footer{
+  background-color: rgb(47, 48, 58, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  
+}
+
+.page-footer-general__container {
+  display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+  gap:40px;
+  width: 100%;
+  margin: auto;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin:0;
+}
+.page-footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.page-footer__icon {
+  color: $background-button;
+font-family:'Raleway', sans-serif;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
+
+.page-footer__link-address {
+  color:$color-main;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  
+&:hover,
+&:focus {
+  color:$background-button;
+}
+}
+
+.page-footer__contact {
+  padding-top: 9px;
+}
+
+.page-footer__contact-link{
+  color:$color-text-window;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+&:hover,
+&:focus {
+  color:$background-button;
+}
+}
+
+
+@media (min-width:768px) and (max-width:1100px)  {
+  .page-footer{
+    width: 100%;
+  }
+  .page-footer-general__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .page-footer__icon {
+    padding-left: 10px;
+    padding-bottom: 11px;
+  }
+  .page-footer__container{
+   
+    justify-content: center;
+    text-align: center;
+  }
+  .page-footer__form {
+    display: block;
+    padding: 54px 150px 0px 165px;
+    text-align: center;
+  }
+  .page-footer__input{
+    width: 450px;
+   margin: 6px 0px 20px 0px;
+  }
+  .page-footer__button-suscrip{
+    margin:0;
+  }
+}
+
+@media (max-width:768px) {
+  
+  .page-footer-general__container {
+    padding: 50px;
+  }
+  .page-footer__icon {
+    text-align: center;
+    padding-bottom: 11px;
+  }
+  .page-footer__container{
+    justify-content: center;
+    text-align: center;
+  }
+ 
+.page-footer__form {
+    display: block;
+    padding: 60px 15px 0px 15px;
+    text-align: center;
+  }
+}

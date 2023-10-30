@@ -1,0 +1,107 @@
+.footer-redes {
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7142em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-text-footer;
+    margin: 0 auto;
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+}
+
+.redes-footer {
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  margin-top: 16px;
+  padding: 0px;
+  margin: 0 auto;
+  margin-top: 16px;
+
+  &__icons {
+    border-radius: 50%;
+    height: 44px;
+    margin-right: 10px;
+    padding: 12px;
+    background: $background-icons;
+    fill: $primary-fill-color;
+    margin-bottom: 0px;
+
+    &:hover,
+    &:focus {
+      background: $primary-color;
+      fill: $color-fill;
+    }
+  }
+
+  &__icons1 {
+    border-radius: 50%;
+    height: 44px;
+    margin-right: 10px;
+    padding: 12px;
+    background: $primary-color;
+    fill: $color-fill;
+    margin-bottom: 0px;
+  }
+  &__icons2 {
+    border-radius: 50%;
+    height: 44px;
+    padding: 12px;
+    background: $background-icons;
+    fill: $primary-fill-color;
+    margin-bottom: 0px;
+
+    &:hover,
+    &:focus {
+      background: $primary-color;
+      fill: $color-fill;
+    }
+  }
+
+  &__redes {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 481px) {
+  .footer-redes {
+    width: 100%;
+  }
+  .redes-footer {
+    margin-top: 20px;
+    &__icons {
+      fill: $fill-button;
+    }
+    &__icons1 {
+      fill: $fill-button;
+      background: $background-icons;
+      &:hover,
+      &:focus {
+        background: $primary-color;
+        fill: $color-fill;
+      }
+    }
+    &__icons2 {
+      fill: $fill-button;
+      background: $background-icons;
+      &:hover,
+      &:focus {
+        background: $primary-color;
+        fill: $color-fill;
+      }
+    }
+  }
+}
